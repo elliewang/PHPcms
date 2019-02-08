@@ -1,0 +1,59 @@
+{template "content","header"}
+<!--main-->
+
+<!--主体开始-->
+<div class="sy_content">
+<div class="page_tit">{catpos($catid)}</div>
+<div class="page_wrap">
+<!--侧导航开始-->
+<div class="page_subnav">
+<ul>
+<li><a href="#">联合金玉新闻</a></li>
+ 
+<li><a href="#">商业地产动态</a></li>
+ 
+<li><a href="#">零售品牌资讯</a></li>
+ 
+<li><a href="#">娱乐品牌资讯</a></li>
+ 
+
+</ul>
+</div>
+<!--侧导航结束-->
+<div class="page_right">
+<div class="page_bread">{catpos($catid)}</div>
+    
+    <div class="page_content">
+    
+    	<div class="page_leftcontent">
+       	  <div class="page_box">
+       			<div class="news_list">
+                	<ul>
+                     {pc:content action="lists" catid="16" order="inputtime DESC" thumb="" moreinfo=""  num="14" }
+                       {loop $data $r}
+                         <li>
+       						<span class="news_listtit"><a href="{$r['url']}" title="{$r['title']}" target="_blank">{$r['title']}</a></span>
+                            <span class="news_listdate">{date('Y-m-d',$r[inputtime])}</span>
+                        </li>  
+                         {/loop}
+                         {/pc}
+                                   
+                    </ul> 
+                </div>
+                <div style="clear:both;"></div>
+                <div class="fenye"> <div id="pages" class="text-c">{$pages}</div></div>
+                
+          </div>
+        </div>  
+ <!--page_rightnav -->
+        {template "content","con_right"}
+		 <!-- page_rightnav -->
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sy_condi2"></div>
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+<!--主体结束-->
+{template "content","footer"}

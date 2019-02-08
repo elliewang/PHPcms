@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={CHARSET}" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link href="{CSS_PATH}reset.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}ugcss/main.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}ugcss/public.css" rel="stylesheet" type="text/css" />
+<link href="{CSS_PATH}default_blue.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{JS_PATH}jquery.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}jquery.sgallery.js"></script>
+<script type="text/javascript" src="{JS_PATH}search_common.js"></script>
+<script type="text/javascript" src="{JS_PATH}ugjs/ScrollPic.js"></script>
+<style type="text/css">
+body,td,th {
+	font-family: "宋体", Arial, sans-serif;
+}
+.logo span{ width:60px; height:20px; line-height:20px; font-size:16px; margin-left:15px; font-weight:bold; display:inline-block;}
+.toptxt a{ color:#FFF}
+.toptxt a:hover{ color:#F00}
+</style>
+</head>
+<body screen_capture_injected="true">
+<!--顶部开始-->
+<div  class="toptxt" style="width:960px; height:20px;margin:2px auto;z-index: 100;background-color:#336699; color:#FFF; text-align:right">
+<span><a href="#" target="_blank">&nbsp韩国&nbsp</a></span>|<span><a href="#" target="_blank">&nbsp纽约&nbsp</a></span>|<span><a href="#" target="_blank">&nbsp四川&nbsp</a></span>|<span><a href="#" target="_blank">&nbsp北京&nbsp</a></span>|<span><a href="#" target="_blank">&nbsp石家庄&nbsp</a></span>
+</div>
+<!--logo开始-->
+<div class="logo">
+<div style="width:387px; height:57px; float:left">
+<a onfocus="this.blur();" href="{APP_PATH}"><img src="{IMG_PATH}ugimg/logo.gif" width="387" height="57" title="联合金玉地产机构"></a>
+</div>
+<div style="width:230px; height:57px; float:left;margin-left:70px;">
+
+
+</div>
+<img src="{IMG_PATH}ugimg/logocall.gif" width="250" height="57" border="0" usemap="#Map" style=" float:left;cursor:pointer; display:inline-block;" onclick="this.blur();" title="ugchina@ugchina.com.cn">
+<map name="Map" id="Map">
+  <area shape="rect" coords="18,38,238,60" href="mailto:ugchina@ugchina.com.cn" target="_blank">
+</map>
+</div>
+<!--logo结束-->
+<!--导航开始-->
+<div class="menu">
+<ul>
+<li style="margin-left:30px; _display:inline;"><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}">首页</a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=9">关于我们</a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=10">新闻中心</a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=11">经典案例</a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=12">服务范畴</a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=13"><strong>招商推荐</strong></a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=14"><strong>诚聘英才</strong></a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+<li><a onfocus="this.blur();" class="hide" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=15">联系我们</a>
+</li><li><img src="{IMG_PATH}ugimg/nav_line.gif"></li>
+
+
+</ul>
+<div class="nav_login">
+<a onfocus="this.blur();" href="{APP_PATH}index.php?m=member&c=index&a=register&siteid=1">注册</a>&nbsp;|&nbsp;<a onfocus="this.blur();" href="{APP_PATH}index.php?m=member&c=index&a=login">登录</a>
+</div>
+</div>
+<!--导航结束-->
+<!--顶部结束-->
+<!--焦点图开始-->
+<div class="focusimg">
+<!--<div class="focusimg_left"></div>-->
+<div class="focustu" style="margin-left:10px; display:inline-block">
+<embed width="940" height="200" src="{IMG_PATH}ugimg/cu3er.swf" quality="high" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="xml={IMG_PATH}ugimg/xml.xml" type="application/x-shockwave-flash" id="cu3er" name="cu3er" />
+</div>
+<!--<div class="focusimg_right"></div>-->
+</div>
+<!--焦点图结束-->

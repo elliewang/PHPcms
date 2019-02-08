@@ -1,0 +1,19 @@
+        <div class="page_rightnav">
+        	        
+
+            
+            <div class="page_rightcontent">
+       		  <div class="page_righttit">最新公司新闻</div>
+                    <ul>
+				{pc:content action="lists" catid="10" order="inputtime DESC" thumb="1" moreinfo="1"  num="5" }
+                       {loop $data $v}
+                                                            	<li><a onfocus="this.blur();" href="{$v['url']}" target="_blank" title="{$v['title']}">{str_cut($v['title'],16,'')}</a></li>
+                     {/loop}
+			  {/pc}
+                    
+    
+                    </ul>
+            </div>
+            <div class="page_rightmore"><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=10" target="_blank">了解更多</a></div>
+            
+        </div>

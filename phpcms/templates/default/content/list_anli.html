@@ -1,0 +1,95 @@
+{template "content","header"}
+<!--main-->
+
+<!--主体开始-->
+<div class="sy_content">
+<div class="page_tit">{catpos($catid)}</div>
+<div class="page_wrap">
+<!--侧导航开始-->
+<div class="page_subnav">
+<ul>
+                <li><a href="/class.php?id=87" title="所有案例">所有案例</a></li>
+        
+        <li><a href="http://www.ugchina.com.cn/index.php?m=content&c=index&a=lists&catid=11" title="经典案例">经典案例</a></li>
+        
+        <li><a href="http://www.ugchina.com.cn/index.php?m=content&c=index&a=lists&catid=11" title="最新案例">最新案例</a></li>
+        
+        <li><a href="http://www.ugchina.com.cn/index.php?m=content&c=index&a=lists&catid=11" title="分类案例">分类案例</a></li>
+        
+ 
+</ul>
+</div>
+<!--侧导航结束-->
+<div class="page_right">
+<div class="page_bread"><a href="/" alt="">首页</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.ugchina.com.cn/index.php?m=content&c=index&a=lists&catid=11" alt=案例推荐/>案例推荐</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href=/class.php?id=89 alt=最新案例/>最新案例</a></div>
+    
+    <div class="page_content">
+    
+    	<div class="page_leftcontent">
+       		<div class="page_box">
+       			<div class="case_list1">
+                	<ul>
+				{pc:content action="lists" catid="11" order="inputtime DESC" thumb="1" moreinfo="1"  num="6" }
+                     {loop $data $v}
+                    	<li><a href="{$v['url']}" target="_blank"><p class="case_listpic"><img src="{thumb($v[thumb],143,107)}" alt="{$v['title']}"/></p><p class="case_listcon">{str_cut($v['title'],22,'')}</p></a></li>
+				 {/loop}
+			     {/pc}		
+                    </ul>
+           	    </div>
+<div style="clear:both;"></div>
+    <div class="fenye"><div id="pages" class="text-c">{$pages}</div></div>             
+          </div>
+        </div>
+        
+        <div class="page_rightnav">
+        
+             <div class="page_rightcontent" style="margin-top:30px;">
+            	<div class="page_rightcontent">
+       		  <div class="page_righttit">公司分布</div>
+             
+<div class="page_box" style="width: 156px; margin-left: 0px">
+	<p>&nbsp;
+		</p>
+	<p class="contact_tit">
+		<span class="scayt-misspell" data-scayt_word="韩国公司" data-scaytid="31">韩国：</span></p>
+	<p class="contact_con" style="line-height: 15px">
+		<span class="scayt-misspell" data-scayt_word="电话" data-scaytid="33">电话</span>:011-9702-0301<span _fck_bookmark="1" style="display: none">&nbsp;</span></p>
+        
+	<p>&nbsp;
+		</p>
+        	<p class="contact_tit">
+		<span class="scayt-misspell" data-scayt_word="四川" data-scaytid="45">四川</span></p>
+	<p class="contact_con" style="line-height: 15px">
+		<span class="scayt-misspell" data-scayt_word="电话" data-scaytid="37">电话</span>: 86-028-86927268<span _fck_bookmark="1" style="display: none">&nbsp;</span></p>
+	<p>&nbsp
+	<p class="contact_tit">
+		<span class="scayt-misspell" data-scayt_word="北京" data-scaytid="43">北京</span></p>
+	<p class="contact_con" style="line-height: 15px">
+		<span class="scayt-misspell" data-scayt_word="电话" data-scaytid="35">电话</span>:86-010-64489182</p>
+	<p>&nbsp;
+		</p>
+;
+		</p>
+	<p class="contact_tit">
+		<span class="scayt-misspell" data-scayt_word="石家庄" data-scaytid="47">石家庄</span></p>
+	<p class="contact_con" style="line-height: 15px">
+		<span class="scayt-misspell" data-scayt_word="电话" data-scaytid="39">电话</span>:86- 0311- 64489182 <span _fck_bookmark="1" style="display: none">&nbsp;</span></p>
+	<p>&nbsp;
+		</p>
+	
+</div>
+            </div>
+
+           	</div> 
+            
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sy_condi2"></div>
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+
+<!--主体结束-->
+{template "content","footer"}

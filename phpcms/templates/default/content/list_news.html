@@ -1,0 +1,112 @@
+{template "content","header"}
+<!--main-->
+
+<!--主体开始-->
+<div class="sy_content">
+<div class="page_tit">{catpos($catid)}</div>
+<div class="page_wrap">
+<!--侧导航开始-->
+<div class="page_subnav">
+<ul>
+<li><a href="#">联合金玉新闻</a></li>
+ 
+<li><a href="#">商业地产动态</a></li>
+ 
+<li><a href="#">零售品牌资讯</a></li>
+ 
+<li><a href="#">娱乐品牌资讯</a></li>
+ 
+
+</ul>
+</div>
+<!--侧导航结束-->
+<div class="page_right">
+<div class="page_bread"><a href="/" alt="">首页></a>{catpos($catid)}</div>
+    
+    <div class="page_content">
+    
+    	<div class="page_leftcontent">
+       	  <div class="page_box">
+       			<div class="news_list">
+                	<ul>
+                                                            	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1063" title="潜行2013【公司动态】" target="_blank">潜行2013【公司动态】</a></span>
+                            <span class="news_listdate">2013-03-11</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1062" title="1月《中国商业地产市场观察》已出版【公司动态】" target="_blank">1月《中国商业地产市场观察》已出版【公司动态】</a></span>
+                            <span class="news_listdate">2013-02-25</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1060" title="青岛涵碧楼将于8月开业 中国境内首座七星级酒店" target="_blank">青岛涵碧楼将于8月开业 中国境内首座七星级酒店</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1059" title="UA花城汇影院IMAX影厅开业 广州CBD中心首块IMAX银幕" target="_blank">UA花城汇影院IMAX影厅开业 广州CBD中心首块IMAX银</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1058" title="PageOne三里屯Village旗舰书店试业 北京第三家门店" target="_blank">PageOne三里屯Village旗舰书店试业 北京第三家门店</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1057" title="MUJI无印良品中国最大旗舰店在杭州利星名品开业" target="_blank">MUJI无印良品中国最大旗舰店在杭州利星名品开业</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1056" title="Hollister入驻银河国际购物中心 2月2日上午开业" target="_blank">Hollister入驻银河国际购物中心 2月2日上午开业</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1055" title="GAP收购女装零售商Intermix剑指高端" target="_blank">GAP收购女装零售商Intermix剑指高端</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1054" title="瑞士历峰集团与周大福成立合资公司 将主打高级腕表" target="_blank">瑞士历峰集团与周大福成立合资公司 将主打高级腕表</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1053" title="福州百货一哥东百东街店去年业绩下滑近5％" target="_blank">福州百货一哥东百东街店去年业绩下滑近5％</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1052" title="茂业百货整合四大业务经营互补 未来三年将开20家店" target="_blank">茂业百货整合四大业务经营互补 未来三年将开20家店</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+                    	<li>
+       						<span class="news_listtit"><a href="/view.php?id=1051" title="昆明首个一站式翡翠珠宝城落户世纪城金源购物中心" target="_blank">昆明首个一站式翡翠珠宝城落户世纪城金源购物中心</a></span>
+                            <span class="news_listdate">2013-02-01</span>
+                        </li>
+                        
+
+                        
+                    </ul> 
+                </div>
+                <div style="clear:both;"></div>
+                <div class="fenye"> <div id="pages" class="text-c">{$pages}</div></div>
+                
+          </div>
+        </div>
+     <!--page_rightnav -->
+        {template "content","con_right"}
+		 <!-- page_rightnav -->
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sy_condi2"></div>
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+<!--主体结束-->
+{template "content","footer"}

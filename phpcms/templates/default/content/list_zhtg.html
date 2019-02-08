@@ -1,0 +1,84 @@
+{template "content","header"}
+<!--main-->
+
+<!--主体开始-->
+<div class="sy_content">
+<div class="page_tit">{catpos($catid)}</div>
+<div class="page_wrap">
+<!--侧导航开始-->
+<div class="page_subnav">
+<ul>
+ <li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=12" title="项目前期策研定位">项目前期策研定位</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=20" title="项目规划设计">项目规划设计</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=21" title="整合推广">整合推广</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=22" title="营销代理">营销代理</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=23" title="招商代理">招商代理</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=24" title="商业运营管理">商业运营管理</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=25" title="融资代理、资产变现">融资代理、资产变现</a></li>
+</ul>
+</div>
+<!--侧导航结束-->
+<div class="page_right">
+<div class="page_bread"><a href="{APP_PATH}" alt="">首页</a>-服务范畴</div>
+    
+
+    <div class="page_content">
+    
+    	<div class="page_leftcontent">
+<!---->
+<div id="cominfo_con">
+
+<div id="cominfo_tagContent">
+<!---->
+<div class="cominfo_tagContent selectTag" id="cominfo_tagContent0">
+    <div class="cominfo_con">
+    <p style="text-indent: 0em; color: #c92a26; font-weight: bold">
+	<span class="scayt-misspell" data-scayt_word="整合推广" data-scaytid="1">整合推广</span></p>
+	
+<p>以最佳性价比原则，追求项目向消费者的最优化宣传
+立足于对产品和市场的深刻理解和准确把握，从传播推广策略到媒介组合到文案和平面表现，搭建产品和消费者之间通畅的沟通桥梁。。</p>
+
+<p><img src="{IMG_PATH}ugimg/8.png" width="500"  height="273" />	</p>
+
+    </div>
+</div>
+<!---->
+
+
+
+
+</div></div>
+<p>
+  <script type="text/javascript">
+function cominfo_selectTag(showContent,selfObj){
+// 操作标签
+var tag = document.getElementById("cominfo_tags").getElementsByTagName("li");
+var taglength = tag.length;
+for(i=0; i<taglength; i++){
+tag[i].className = "";
+}
+selfObj.parentNode.className = "selectTag";
+// 操作内容
+for(i=0; j=document.getElementById("cominfo_tagContent"+i); i++){
+j.style.display = "none";
+}
+document.getElementById(showContent).style.display = "block";
+
+
+}
+</script>
+</p>
+<!---->
+        </div>
+        
+  <!--newsright-->
+{template "content","con_newsright"}
+<!--newsright-->
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sy_condi2"></div>
+<!--主体结束-->
+{template "content","footer"}

@@ -1,0 +1,129 @@
+{template "content","header"}
+<!--main-->
+
+<!--主体开始-->
+<div class="sy_content">
+<div class="page_tit">{catpos($catid)}</div>
+<div class="page_wrap">
+<!--侧导航开始-->
+<div class="page_subnav">
+<ul>
+                  <li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=18">业务资源</a></li>
+                  <li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=18">品牌资源</a></li>
+               
+</ul>
+</div>
+<!--侧导航结束-->
+<div class="page_right">
+<div class="page_bread"><a href="{APP_PATH}" alt="">首页</a>-资源平台</div>
+    
+
+    <div class="page_content">
+    
+    	<div class="page_leftcontent">
+<!---->
+<div id="cominfo_con">
+<ul id="cominfo_tags">
+  <li class="selectTag"><a onfocus="this.blur();" onclick="cominfo_selectTag(&#39;cominfo_tagContent0&#39;,this)" href="javascript:void(0)">金玉资源</a> </li>
+  <li><a onfocus="this.blur();" onclick="cominfo_selectTag(&#39;cominfo_tagContent1&#39;,this)" href="javascript:void(0)">商业资源</a> </li>
+  <li><a onfocus="this.blur();" onclick="cominfo_selectTag(&#39;cominfo_tagContent2&#39;,this)" href="javascript:void(0)">合作品牌</a> </li>
+  <li><a onfocus="this.blur();" onclick="cominfo_selectTag(&#39;cominfo_tagContent3&#39;,this)" href="javascript:void(0)">战略合作</a> </li>
+  </ul>
+<div id="cominfo_tagContent">
+<!---->
+<div class="cominfo_tagContent selectTag" id="cominfo_tagContent0">
+    <div class="cominfo_con">
+<p>资源是企业实力的外在体现
+创新是一个企业无限扩张发展的精髓动力所在，而资源则是企业积累财富的方向和途径。
+它是企业的支柱，是企业发展的基石，是企业精神的一种延续。
+联合金玉作为中国专业房地产综合服务商，经过数年的发展历程，积累了丰富的市场资源</p>
+
+<p>
+	   &nbsp;&nbsp;&nbsp;&nbsp;● 中国商业联合会会员单位，购物中心专业委员会理事单位</p>
+
+<p>
+	   &nbsp;&nbsp;&nbsp;&nbsp;● 韩国先进商业地产理念、数十个韩国品牌商家中国首席代理。</p>
+ 
+<p>
+	   &nbsp;&nbsp;&nbsp;&nbsp;● 强大本土商业资源（10万余个各类优质投资客群资源、商家资源数万家）</p>
+ 
+<p>
+	   &nbsp;&nbsp;&nbsp;&nbsp;● 联合金玉（中国）各分部商业资源共享平台</p>
+ 
+<p>
+	   &nbsp;&nbsp;&nbsp;&nbsp;● 自身创建“联合金玉商业联盟”集商家、投资者资源</p>
+ 
+<p>
+	   &nbsp;&nbsp;&nbsp;&nbsp;● 多年积累的中国内地一线项目运作经验</p>
+
+<p>
+	   &nbsp;&nbsp;&nbsp;&nbsp;● 与国内外知名金融投资机构建立咨询合作关系</p>
+    
+    </div>
+</div>
+<!---->
+
+<!---->
+<div class="cominfo_tagContent " id="cominfo_tagContent1">
+    <div class="cominfo_con">
+  <p>联合金玉作为中国商业联合会会员单位，购物中心专业委员会理事单位，以韩国品牌为特色，经过多年的积累，形成公司强大的商业资源整合能力。</p>
+  <p><img src="{IMG_PATH}ugimg/lsdw.jpg" width="422" height="555"></p>
+    </div>
+
+</div>
+<!---->
+
+<!---->
+<div class="cominfo_tagContent" id="cominfo_tagContent2">
+<div class="cominfo_con" style=" width:500px; height:auto; text-align:center" >
+	<p><img src="{IMG_PATH}ugimg/14.png" width="500" height="304"></p>
+    <p><img src="{IMG_PATH}ugimg/15.png" width="500" height="327"></p>
+    <p><img src="{IMG_PATH}ugimg/16.png" width="500" height="299"></p>
+
+   </div>
+</div>
+<!---->
+
+<!---->
+<div class="cominfo_tagContent" id="cominfo_tagContent3">
+<div class="cominfo_con">
+ <p><img src="{IMG_PATH}ugimg/zl1.jpg" width="204" height="232"></p>
+ <p>韩国辉世达成战略联盟，深度合作，建立感受型商业物业管理运行体系，把韩国的商业资源与乐天集团的运营管理的先进服务理念整合，我们在中国实现了人性化的商业运营管理体系为商业地产项目资产维护提供国际标准化的运营平台，成功地实现了资产价值提升。</p>
+    </div>
+</div>
+<!---->
+</div></div>
+<p>
+  <script type="text/javascript">
+function cominfo_selectTag(showContent,selfObj){
+// 操作标签
+var tag = document.getElementById("cominfo_tags").getElementsByTagName("li");
+var taglength = tag.length;
+for(i=0; i<taglength; i++){
+tag[i].className = "";
+}
+selfObj.parentNode.className = "selectTag";
+// 操作内容
+for(i=0; j=document.getElementById("cominfo_tagContent"+i); i++){
+j.style.display = "none";
+}
+document.getElementById(showContent).style.display = "block";
+
+
+}
+</script>
+</p>
+<!---->
+        </div>
+        
+       <!--newsright-->
+{template "content","con_newsright"}
+<!--newsright-->
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sy_condi2"></div>
+<!--主体结束-->
+{template "content","footer"}

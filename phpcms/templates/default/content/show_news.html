@@ -1,0 +1,55 @@
+{template "content","header"}
+<!--main-->
+<!--主体开始-->
+<div class="sy_content">
+<div class="page_tit">{catpos($catid)}</div>
+<div class="page_wrap">
+<!--侧导航开始-->
+<div class="page_subnav">
+<ul>
+<li><a href="/class.php?id=13">最新更新新闻</a></li>
+ 
+<li><a href="/class.php?id=14">商业地产动态</a></li>
+ 
+<li><a href="/class.php?id=15">零售品牌资讯</a></li>
+ 
+<li><a href="/class.php?id=16">娱乐品牌资讯</a></li>
+ 
+
+</ul>
+</div>
+<!--侧导航结束-->
+<div class="page_right">
+<div class="page_bread"><a href="/" alt="">首页</a>&nbsp;&nbsp;-&nbsp;&nbsp;{catpos($catid)}</div>
+    
+    <div class="page_content">
+    
+    	<div class="page_leftcontent">
+       	  <div class="page_box">
+       			<div class="news_area">
+                	<div class="news_tit">{$title}</div>
+                    <div class="news_date">{$inputtime}</div>
+                    
+                    <div class="news_content" style="width:530px; height:auto; overflow:hidden; text-align:center">
+                    {$content}
+                    </div>
+                    
+                </div>
+          </div>
+        </div>
+          <!--page_rightnav -->
+        {template "content","con_right"}
+		 <!-- page_rightnav -->
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sy_condi2"></div>
+<!--主体结束-->
+<!--底部开始-->
+<!--底部开始-->
+{template "content","footer"}
+<!--底部结束-->
+<!--底部结束-->
+

@@ -1,0 +1,105 @@
+{template "content","header"}
+<!--main-->
+
+<!--主体开始-->
+<div class="sy_content">
+<div class="page_tit">{catpos($catid)}</div>
+<div class="page_wrap">
+<!--侧导航开始-->
+<div class="page_subnav">
+<ul>
+ <li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=12" title="项目前期策研定位">项目前期策研定位</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=20" title="项目规划设计">项目规划设计</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=21" title="整合推广">整合推广</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=22" title="营销代理">营销代理</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=23" title="招商代理">招商代理</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=24" title="商业运营管理">商业运营管理</a></li>
+<li><a href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=25" title="融资代理、资产变现">融资代理、资产变现</a></li>
+</ul>
+</div>
+<!--侧导航结束-->
+<div class="page_right">
+<div class="page_bread"><a href="{APP_PATH}" alt="">首页</a>-服务范畴</div>
+    
+
+    <div class="page_content">
+    
+    	<div class="page_leftcontent">
+<!---->
+<div id="cominfo_con">
+
+<div id="cominfo_tagContent">
+<!---->
+<div class="cominfo_tagContent selectTag" id="cominfo_tagContent0">
+    <div class="cominfo_con">
+ 
+<p class="scayt-misspell" style="text-indent: 0em; color: #c92a26; font-weight: bold">2.项目规划设计：</p>  
+
+　　<p>商业项目规划设计包括大规设计、详规设计、商业设计。</p>  
+<p>前期规划阶段与设计院对接，将商业智慧融于建筑设计的艺术视野，对于商业资源的精准把控避免因物业结构不满足商业使用功能造成的二次改造或主力店无法进驻的情况，通过规划最大程度提升物业价值。</p>   
+
+    
+    <p class="scayt-misspell" style="text-indent: 0em; color: #c92a26; font-weight: bold">2.1规划设计：</p>  
+
+　　<p><img src="{IMG_PATH}ugimg/1.png" width="500" height="311"  /></p>  
+
+<p class="scayt-misspell" style="text-indent: 0em; color: #c92a26; font-weight: bold">2.2商业设计</p>
+<p>
+商业设计包括商业环境设计、导示设计、VMD设计。
+在最终确定的定位、规划设计的基础上，开展商业设计。
+在整个设计过程中，由既懂商业运营，又懂商业设计的专家进行总体设计把控，力求使设计成果在实际运营过程中美观、实用、易于管理</p>   
+<p class="scayt-misspell" style="text-indent: 0em; color: #c92a26; font-weight: bold">A：商业环境设计：</p>
+<p><img src="{IMG_PATH}ugimg/2.png" width="500" height="306"  /></p> 
+<p><img src="{IMG_PATH}ugimg/3.png" width="500" height="307"  /></p> 
+
+<p class="scayt-misspell" style="text-indent: 0em; color: #c92a26; font-weight: bold">B：导示设计</p>
+<p>满足指引、又美化环境的作用，通过对实用性和效力性的研究，最大限度地利用环境空间，设计功能性强的环境视觉识别系统，满足人们在环境中行为和心理需求。</p>
+<p><img src="{IMG_PATH}ugimg/4.png" width="500" height="280"  /></p> 
+<p><img src="{IMG_PATH}ugimg/5.png" width="500" height="293"  /></p
+<p><img src="{IMG_PATH}ugimg/6.png" width="500" height="272"  /></p>  
+<p class="scayt-misspell" style="text-indent: 0em; color: #c92a26; font-weight: bold">C：VMD设计</p>
+<p> 通过VMD视觉营销设计从而达到表现商业独特性以及与其他商业差别化的目的，
+营造商业气氛，优化购物环境，提升品牌形象，吸引顾客消费的作用。</p>
+<p><img src="{IMG_PATH}ugimg/7.png" width="500" height="288"  /></p> 
+    </div>
+</div>
+<!---->
+
+
+
+
+</div></div>
+<p>
+  <script type="text/javascript">
+function cominfo_selectTag(showContent,selfObj){
+// 操作标签
+var tag = document.getElementById("cominfo_tags").getElementsByTagName("li");
+var taglength = tag.length;
+for(i=0; i<taglength; i++){
+tag[i].className = "";
+}
+selfObj.parentNode.className = "selectTag";
+// 操作内容
+for(i=0; j=document.getElementById("cominfo_tagContent"+i); i++){
+j.style.display = "none";
+}
+document.getElementById(showContent).style.display = "block";
+
+
+}
+</script>
+</p>
+<!---->
+        </div>
+        
+  <!--newsright-->
+{template "content","con_newsright"}
+<!--newsright-->
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sy_condi2"></div>
+<!--主体结束-->
+{template "content","footer"}
